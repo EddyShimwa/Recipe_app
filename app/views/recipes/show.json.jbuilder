@@ -1,1 +1,3 @@
-json.partial! "recipes/recipe", recipe: @recipe
+# frozen_string_literal: true
+
+json.partial! 'recipes/recipe', recipe: @recipe
