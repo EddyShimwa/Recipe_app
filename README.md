@@ -35,7 +35,7 @@
 
 # 📖 my_Blog_app <a name="about-project"></a>
 
-> **my_blog_app** is a Ruby-based blog app allows users to create and publish posts on the internet. It includes features such as editing tools, customizable templates, and social sharing capabilities.
+**Recipe_app** The Recipe app helps you keep track of your recipes and ingredients. You can save ingredients, see how much you have on hand, create new recipes, and generate a shopping list based on what you need..
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -151,7 +151,6 @@ gem install rspec
 - [ ] **[I will add some validations]**
 - [ ] **[I will add devise]**
 - [ ] **[I will add authorization rules]**
-- [ ] **[I will add API endpoints]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
