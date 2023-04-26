@@ -1,14 +1,26 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Recipes</h1>
-
-<div id="recipes">
-  <% @recipes.each do |recipe| %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Show this recipe", recipe %>
-    </p>
+<div class="container-fluid">
+  <% if @recipes.empty? %>
+    <div class="text-decoration-none mb-5 mx-auto d-flex justify-content-center">
+      <h2 class="text-center me-6">No recipes available</h2>
+      <%= link_to "Add new recipe", new_recipe_path, class: 'btn btn-secondary text-center' %>
+    </div>
+  <% else %>
+    <h3 class="text-center mb-4">My Recipes</h3>
+    <div class="text-end mb-3">
+      <%= link_to "Add new recipe", new_recipe_path, class: 'btn btn-secondary' %>
+    </div>
+    <% @recipes.each do |recipe| %>
+      <div class="card mb-4">
+        <%= link_to recipe_path(recipe.id), class: 'text-decoration-none' do%>
+          <div class="card-body">
+            <h4 class="card-title"><%= recipe.name %></h4>
+            <p class="card-text"><%= recipe.description %></p>
+          </div>
+        <%end%>
+        <div class="card-footer bg-white text-end">
+          <%= button_to "Remove", recipe_path(recipe.id), class: 'btn btn-danger', method: :delete %>
+        </div>
+      </div>
+    <% end %>
   <% end %>
 </div>
-
-<%= link_to "New recipe", new_recipe_path %>
