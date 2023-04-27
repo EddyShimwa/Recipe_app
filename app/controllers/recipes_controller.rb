@@ -4,11 +4,13 @@ class RecipesController < ApplicationController
 
   # GET /recipes or /recipes.json
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.where(user: current_user)
   end
 
   # GET /recipes/1 or /recipes/1.json
-  def show; end
+  def show
+    @recipe = Recipe.find(params[:id])
+  end
 
   # GET /recipes/new
   def new
@@ -21,15 +23,11 @@ class RecipesController < ApplicationController
   # POST /recipes or /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
-
-    respond_to do |format|
-      if @recipe.save
-        format.html { redirect_to recipe_url(@recipe), notice: 'Recipe was successfully created.' }
-        format.json { render :show, status: :created, location: @recipe }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @recipe.errors, status: :unprocessable_entity }
-      end
+    @recipe.user = current_user
+    if @recipe.save
+      redirect_to recipes_url, notice: 'Recipe was successfully created.'
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -58,6 +56,9 @@ class RecipesController < ApplicationController
 
   private
 
+  def set_recipe
+    @recipe = Recipe.find(params[:id])
+  end
 
   # Only allow a list of trusted parameters through.
   def recipe_params
