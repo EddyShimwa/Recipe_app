@@ -1,0 +1,63 @@
+@import "bootstrap";
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-weight: normal;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.field input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.field input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+.field em {
+  font-size: 14px;
+  color: #999;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+}
+
+.actions .btn {
+  display: block;
+}
