@@ -11,7 +11,7 @@ class FoodsController < ApplicationController
 
   # GET /foods/new
   def new
-    @food = Food.new
+    @food = current_user.foods.new
   end
 
   # GET /foods/1/edit
