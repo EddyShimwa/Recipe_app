@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   resources :users
   resources :public_recipes, only: [:index]
  
-  get 'shopping_list', to: 'shopping_list#index'
+  get 'shopping_list', to: 'shopping_list#index', as: 'shopping_list'
 end
