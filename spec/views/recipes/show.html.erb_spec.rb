@@ -5,7 +5,7 @@ RSpec.describe 'recipes/show', type: :view do
   before(:example) do
     @user = User.create(name: 'Kolly', email: 'asdasasd@gmail.com', password: 'password', confirmed_at: Time.now)
     @recipe = Recipe.create(name: 'Recipe', description: 'Description', cooking_time: '1 hour',
-                            preperation_time: '1 hour', public: false, user: @user)
+                            preparation_time: '1 hour', public: false, user: @user)
     sign_in @user
     visit recipe_path(@recipe)
   end

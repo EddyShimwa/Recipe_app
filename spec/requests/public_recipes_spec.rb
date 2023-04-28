@@ -5,7 +5,7 @@ RSpec.describe PublicRecipesController, type: :request do
   before(:example) do
     @user = User.create(name: 'pray', email: 'pra@gmail.com', password: 'password', confirmed_at: Time.now)
     @recipe = Recipe.create(name: 'Recipe', description: 'Description', public: true, cooking_time: '1 hour',
-                            preperation_time: '1 hour', user: @user)
+                            preparation_time: '1 hour', user: @user)
   end
   describe 'GET /index' do
     before do

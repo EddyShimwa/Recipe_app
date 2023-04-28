@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.feature 'Login', type: :feature do
   before :each do
-    User.create(name: 'Hassan', email: 'hassan@gmail.com', password: '123456', confirmed_at: Time.now)
+    User.create(name: 'eddy', email: 'eddy@gmail.com', password: '123456', confirmed_at: Time.now)
     visit user_session_path
   end
 
@@ -21,14 +21,14 @@ RSpec.feature 'Login', type: :feature do
   end
 
   it 'Signed in successfully' do
-    fill_in 'Email', with: 'hassan@gmail.com'
+    fill_in 'Email', with: 'eddy@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
     expect(page).to have_content 'Signed in successfully.'
   end
 
   it 'Login successfully' do
-    fill_in 'Email', with: 'hassan@gmail.com'
+    fill_in 'Email', with: 'eddy@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
     expect(page).to have_current_path(root_path)

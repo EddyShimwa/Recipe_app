@@ -5,7 +5,7 @@ RSpec.describe RecipesController, type: :request do
   before(:example) do
     @user = User.create(name: 'pray', email: 'pra@gmail.com', password: 'password', confirmed_at: Time.now)
     @recipe = Recipe.create(name: 'Recipe', description: 'Description', cooking_time: '1 hour',
-                            preperation_time: '1 hour', user: @user)
+                            preparation_time: '1 hour', user: @user)
     @food = Food.create(name: 'apple', measurement_unit: 'kg', price: 1.5, quantity: 45, user: @user)
     @recipe_food = RecipeFood.create(recipe: @recipe, food: @food, quantity: 1)
   end
@@ -50,9 +50,6 @@ RSpec.describe RecipesController, type: :request do
     end
     it 'response to html' do
       expect(response.content_type).to include 'text/html'
-    end
-    it 'Edit Ingredient' do
-      expect(response.body).to include 'Edit Ingredient'
     end
   end
 

@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe 'Recipe app', type: :feature do
   describe ' Recipe show page' do
     before(:each) do
-      @user1 = User.create!(name: 'hassan', email: 'hassan@gmail.com', password: '123456', confirmed_at: Time.now)
+      @user1 = User.create!(name: 'eddy', email: 'eddy@gmail.com', password: '123456', confirmed_at: Time.now)
       visit user_session_path
-      fill_in 'Email', with: 'hassan@gmail.com'
+      fill_in 'Email', with: 'eddy@gmail.com'
       fill_in 'Password', with: '123456'
       click_button 'Log in'
-      @recipe1 = Recipe.create(name: 'recipe1', cooking_time: 2, preperation_time: 1,
+      @recipe1 = Recipe.create(name: 'recipe1', cooking_time: 2, preparation_time: 1,
                                description: 'recipe1 description', public: true, user_id: @user1.id)
       @food = Food.create(name: 'orange', price: 3, measurement_unit: 'kg', quantity: 2, user_id: @user1.id,
                           created_at: Time.now)

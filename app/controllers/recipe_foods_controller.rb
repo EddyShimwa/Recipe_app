@@ -32,14 +32,19 @@ class RecipeFoodsController < ApplicationController
 
   # PATCH/PUT /recipe_foods/1 or /recipe_foods/1.json
   def update
-    respond_to do |_format|
+    @recipe_food = RecipeFood.find(params[:id])
+    respond_to do |format|
       if @recipe_food.update(recipe_food_params)
-        redirect_to recipe_url(params[:recipe_id]), notice: 'Recipe food was successfully updated.'
+        format.html { redirect_to recipe_url(params[:recipe_id]), notice: 'Recipe food was successfully updated.' }
+        format.json { head :no_content }
       else
-        render :edit, status: :unprocessable_entity
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @recipe_food.errors, status: :unprocessable_entity }
       end
     end
   end
+  
+  
 
   # DELETE /recipe_foods/1 or /recipe_foods/1.json
   def destroy

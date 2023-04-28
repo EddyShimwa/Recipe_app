@@ -4,7 +4,7 @@ RSpec.describe RecipesController, type: :routing do
   include Devise::Test::IntegrationHelpers
   let(:user) { User.create(name: 'test', email: 'asasd@gmail.com', password: '123456', confirmed_at: Time.now) }
   let(:recipe) do
-    Recipe.create(name: 'Recipe', description: 'Description', cooking_time: '1 hour', preperation_time: '1 hour', user:)
+    Recipe.create(name: 'Recipe', description: 'Description', cooking_time: '1 hour', preparation_time: '1 hour', user:)
   end
   describe 'routing' do
     before do
