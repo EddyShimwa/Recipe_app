@@ -14,13 +14,13 @@ RSpec.describe 'The page index page', type: :feature do
 
     it 'Navigate to the create new food page' do
       visit foods_path
-      click_on 'Add food'
+      click_on 'Add Food'
       expect(current_path).to eql new_food_path
     end
 
     it 'has a button to create new food' do
       visit foods_path
-      expect(page).to have_content 'Add food'
+      expect(page).to have_content 'Add Food'
     end
 
     it 'show food name' do

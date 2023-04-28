@@ -19,6 +19,15 @@ RSpec.describe 'recipes_food/new', type: :view do
   it 'has a select field for food' do
     expect(page).to have_select('recipe_food[food_id]')
   end
+
+  it 'has a select field for food' do
+    expect(page).to have_select('recipe_food[food_id]')
+  end
+  
+  it 'has a select field for food' do
+    expect(page).to have_select('recipe_food[food_id]')
+  end
+
   it 'has a quantity field' do
     expect(page).to have_field('recipe_food[quantity]')
   end

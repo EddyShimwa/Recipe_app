@@ -9669,3 +9669,302 @@ Searched in:
     4:     <div class="form-container">
   
 app/views/foods/new.html.erb:1
+Started GET "/foods/new" for 127.0.0.1 at 2023-04-28 20:49:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FoodsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (Duration: 36.4ms | Allocations: 3928)
+  Rendered layout layouts/application.html.erb (Duration: 4409.9ms | Allocations: 69882)
+Completed 200 OK in 4609ms (Views: 4417.4ms | ActiveRecord: 28.2ms | Allocations: 92697)
+
+
+Started POST "/foods" for 127.0.0.1 at 2023-04-28 20:50:07 +0200
+Processing by FoodsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "food"=>{"name"=>"rice", "measurement_unit"=>"kg", "price"=>"74", "quantity"=>"12"}, "commit"=>"Create Food"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/foods_controller.rb:24:in `create'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:24:in `create'
+  [1m[36mFood Create (3.3ms)[0m  [1m[32mINSERT INTO "foods" ("name", "measurement_unit", "price", "quantity", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "rice"], ["measurement_unit", "kg"], ["price", 74], ["quantity", 12], ["user_id", 1], ["created_at", "2023-04-28 18:50:07.324200"], ["updated_at", "2023-04-28 18:50:07.324200"]]
+  ↳ app/controllers/foods_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/foods_controller.rb:24:in `create'
+Redirected to http://127.0.0.1:3000/foods
+Completed 302 Found in 86ms (ActiveRecord: 15.9ms | Allocations: 7825)
+
+
+Started GET "/foods" for 127.0.0.1 at 2023-04-28 20:50:07 +0200
+Processing by FoodsController#index as TURBO_STREAM
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (2.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/foods/index.html.erb:15
+  Rendered foods/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1316)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 4631)
+Completed 200 OK in 59ms (Views: 37.3ms | ActiveRecord: 3.7ms | Allocations: 6483)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-28 20:50:17 +0200
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Exists? (3.7ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:2
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/index.html.erb:12
+  Rendered recipes/index.html.erb within layouts/application (Duration: 87.4ms | Allocations: 5895)
+  Rendered layout layouts/application.html.erb (Duration: 118.9ms | Allocations: 9295)
+Completed 200 OK in 173ms (Views: 111.6ms | ActiveRecord: 23.9ms | Allocations: 13627)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2023-04-28 20:50:20 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[36mRecipeFood Load (2.7ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  ↳ app/views/recipes/show.html.erb:36
+  Rendered recipes/show.html.erb within layouts/application (Duration: 69.2ms | Allocations: 3578)
+  Rendered layout layouts/application.html.erb (Duration: 99.2ms | Allocations: 6898)
+Completed 200 OK in 138ms (Views: 96.7ms | ActiveRecord: 11.4ms | Allocations: 11020)
+
+
+Started GET "/recipes/1/recipe_foods/new" for 127.0.0.1 at 2023-04-28 20:50:29 +0200
+Processing by RecipeFoodsController#new as HTML
+  Parameters: {"recipe_id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/new.html.erb within layouts/application
+  [1m[36mFood Load (1.9ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipe_foods/new.html.erb:10:in `map'
+  Rendered recipe_foods/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1504)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 4914)
+Completed 200 OK in 91ms (Views: 42.3ms | ActiveRecord: 10.3ms | Allocations: 9474)
+
+
+Started POST "/recipes/1/recipe_foods" for 127.0.0.1 at 2023-04-28 20:50:40 +0200
+Processing by RecipeFoodsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe_food"=>{"food_id"=>"3", "quantity"=>"12"}, "commit"=>"Add Ingredient", "recipe_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipe_foods_controller.rb:26:in `create'
+  [1m[36mFood Load (1.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:26:in `create'
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:26:in `create'
+  [1m[36mRecipeFood Create (4.3ms)[0m  [1m[32mINSERT INTO "recipe_foods" ("quantity", "food_id", "recipe_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["quantity", 12], ["food_id", 3], ["recipe_id", 1], ["created_at", "2023-04-28 18:50:40.788863"], ["updated_at", "2023-04-28 18:50:40.788863"]]
+  ↳ app/controllers/recipe_foods_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipe_foods_controller.rb:26:in `create'
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed 302 Found in 80ms (ActiveRecord: 11.1ms | Allocations: 8140)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2023-04-28 20:50:40 +0200
+Processing by RecipesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[36mRecipeFood Load (1.7ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  ↳ app/views/recipes/show.html.erb:36
+  [1m[36mFood Load (1.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/recipes/show.html.erb:36
+  Rendered recipes/show.html.erb within layouts/application (Duration: 54.0ms | Allocations: 4099)
+  Rendered layout layouts/application.html.erb (Duration: 76.0ms | Allocations: 7404)
+Completed 200 OK in 94ms (Views: 74.7ms | ActiveRecord: 6.4ms | Allocations: 8756)
+
+
+Started GET "/recipes/1/recipe_foods/4/edit" for 127.0.0.1 at 2023-04-28 20:51:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipeFoodsController#edit as HTML
+  Parameters: {"recipe_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeFood Load (1.2ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:61:in `set_recipe_food'
+  [1m[36mCACHE RecipeFood Load (0.4ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:18:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/edit.html.erb within layouts/application
+  Rendered recipe_foods/_form.html.erb (Duration: 36.2ms | Allocations: 3662)
+  Rendered recipe_foods/edit.html.erb within layouts/application (Duration: 118.0ms | Allocations: 4277)
+  Rendered layout layouts/application.html.erb (Duration: 388.8ms | Allocations: 49495)
+Completed 200 OK in 667ms (Views: 396.6ms | ActiveRecord: 40.0ms | Allocations: 73400)
+
+
+Started GET "/recipes/1/recipe_foods/new" for 127.0.0.1 at 2023-04-28 21:02:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipeFoodsController#new as HTML
+  Parameters: {"recipe_id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/new.html.erb within layouts/application
+  [1m[36mFood Load (3.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipe_foods/new.html.erb:10:in `map'
+  Rendered recipe_foods/new.html.erb within layouts/application (Duration: 76.2ms | Allocations: 5266)
+  Rendered layout layouts/application.html.erb (Duration: 412.6ms | Allocations: 50700)
+Completed 200 OK in 628ms (Views: 416.5ms | ActiveRecord: 47.2ms | Allocations: 73002)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2023-04-28 21:02:51 +0200
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (Duration: 48.4ms | Allocations: 4281)
+  Rendered recipes/new.html.erb within layouts/application (Duration: 57.1ms | Allocations: 4616)
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 8029)
+Completed 200 OK in 217ms (Views: 92.0ms | ActiveRecord: 17.4ms | Allocations: 15722)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2023-04-28 21:03:20 +0200
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"name"=>"Burger", "preparation_time"=>"2 hours", "cooking_time"=>"30 mins", "description"=>"jhgpiugpiyuvbjhvkluvcuygh", "public"=>"1", "user_id"=>"dupe"}, "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:28:in `create'
+  [1m[36mRecipe Create (4.0ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "preparation_time", "cooking_time", "description", "public", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Burger"], ["preparation_time", "2 hours"], ["cooking_time", "30 mins"], ["description", "jhgpiugpiyuvbjhvkluvcuygh"], ["public", true], ["user_id", 1], ["created_at", "2023-04-28 19:03:20.663504"], ["updated_at", "2023-04-28 19:03:20.663504"]]
+  ↳ app/controllers/recipes_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (15.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:28:in `create'
+Redirected to http://127.0.0.1:3000/recipes
+Completed 302 Found in 97ms (ActiveRecord: 21.6ms | Allocations: 6093)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2023-04-28 21:03:20 +0200
+Processing by RecipesController#index as TURBO_STREAM
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:2
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/index.html.erb:12
+  Rendered recipes/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 2635)
+  Rendered layout layouts/application.html.erb (Duration: 56.4ms | Allocations: 5990)
+Completed 200 OK in 73ms (Views: 55.2ms | ActiveRecord: 4.8ms | Allocations: 7430)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2023-04-28 21:14:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[36mRecipeFood Load (1.6ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  ↳ app/views/recipes/show.html.erb:36
+  [1m[36mFood Load (1.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/recipes/show.html.erb:36
+  Rendered recipes/show.html.erb within layouts/application (Duration: 289.8ms | Allocations: 21783)
+  Rendered layout layouts/application.html.erb (Duration: 575.0ms | Allocations: 67047)
+Completed 200 OK in 803ms (Views: 548.8ms | ActiveRecord: 64.5ms | Allocations: 85318)
+
+
+Started PATCH "/recipes/1" for 127.0.0.1 at 2023-04-28 21:15:05 +0200
+Processing by RecipesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mRecipe Load (6.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 32ms (ActiveRecord: 8.2ms | Allocations: 2492)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/recipes_controller.rb:66:in `recipe_params'
+app/controllers/recipes_controller.rb:38:in `block in update'
+app/controllers/recipes_controller.rb:37:in `update'
+Started GET "/recipes/1" for 127.0.0.1 at 2023-04-28 21:15:06 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[36mRecipeFood Load (1.2ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  ↳ app/views/recipes/show.html.erb:36
+  [1m[36mFood Load (1.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/recipes/show.html.erb:36
+  Rendered recipes/show.html.erb within layouts/application (Duration: 39.0ms | Allocations: 3458)
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 6801)
+Completed 200 OK in 92ms (Views: 66.4ms | ActiveRecord: 5.3ms | Allocations: 8154)
+
+
+Started PATCH "/recipes/1" for 127.0.0.1 at 2023-04-28 21:15:07 +0200
+Processing by RecipesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mRecipe Load (2.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 20ms (ActiveRecord: 4.5ms | Allocations: 2376)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/recipes_controller.rb:66:in `recipe_params'
+app/controllers/recipes_controller.rb:38:in `block in update'
+app/controllers/recipes_controller.rb:37:in `update'
+Started GET "/recipes/1" for 127.0.0.1 at 2023-04-28 21:15:08 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (3.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:61:in `set_recipe'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:9
+  [1m[36mRecipeFood Load (3.8ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  ↳ app/views/recipes/show.html.erb:36
+  [1m[36mFood Load (1.9ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/recipes/show.html.erb:36
+  Rendered recipes/show.html.erb within layouts/application (Duration: 48.6ms | Allocations: 3435)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 6778)
+Completed 200 OK in 116ms (Views: 84.0ms | ActiveRecord: 10.9ms | Allocations: 8125)
+
+
+Started GET "/shopping_list" for 127.0.0.1 at 2023-04-28 21:15:39 +0200
+Processing by ShoppingListController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeFood Load (2.3ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" IN (SELECT "recipes"."id" FROM "recipes" WHERE "recipes"."user_id" = $1)[0m  [["user_id", 1]]
+  ↳ app/controllers/shopping_list_controller.rb:7:in `group_by'
+  [1m[36mFood Load (1.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/shopping_list_controller.rb:7:in `block in index'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 4.8ms | Allocations: 4392)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/shopping_list_controller.rb:15:in `index'

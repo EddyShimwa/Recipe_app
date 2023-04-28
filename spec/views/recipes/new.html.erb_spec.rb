@@ -16,7 +16,7 @@ RSpec.describe 'recipes/new', type: :view do
 
   it 'submit form' do
     fill_in 'Name', with: 'shake'
-    fill_in 'Preperation time', with: '1 hour'
+    fill_in 'Preparation time', with: '1 hour'
     fill_in 'Cooking time', with: '1 hour'
     fill_in 'Description', with: 'Description'
     click_on 'Create Recipe'

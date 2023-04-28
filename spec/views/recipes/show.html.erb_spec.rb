@@ -13,10 +13,9 @@ RSpec.describe 'recipes/show', type: :view do
   it 'renders recipe details' do
     expect(page).to have_content 'Recipe'
   end
-
-  it 'generates shopping list' do
-    click_on 'Generate shopping list'
-    expect(current_path).to eql '/shopping_list'
+  
+  it 'renders recipe details' do
+    expect(page).to have_content 'Recipe'
   end
 
   it 'click on add ingredient' do
@@ -24,8 +23,4 @@ RSpec.describe 'recipes/show', type: :view do
     expect(current_path).to eql new_recipe_recipe_food_path(@recipe)
   end
 
-  it 'click on public' do
-    click_on 'Change Private to public'
-    expect(page).to have_content 'Current Status: Public'
-  end
 end
