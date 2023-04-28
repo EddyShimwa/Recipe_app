@@ -1,0 +1,14 @@
+body {
+  background-color: #e9cfcf;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 60%;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,56 @@
+/* app/assets/stylesheets/login.css.scss */
+@import "bootstrap";
+
+#login-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2 {
+  text-align: center;
+  font-size: 39px;
+  margin-bottom: 20px;
+}
+
+#login-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#login-form input[type="submit"] {
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #00796b;
+}
+
+.btn {
+  width: 100%;
+}
+
+.cancel {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
