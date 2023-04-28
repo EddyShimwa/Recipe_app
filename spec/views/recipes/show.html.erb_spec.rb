@@ -13,7 +13,7 @@ RSpec.describe 'recipes/show', type: :view do
   it 'renders recipe details' do
     expect(page).to have_content 'Recipe'
   end
-  
+
   it 'renders recipe details' do
     expect(page).to have_content 'Recipe'
   end
@@ -22,5 +22,4 @@ RSpec.describe 'recipes/show', type: :view do
     click_on 'Add Ingredient'
     expect(current_path).to eql new_recipe_recipe_food_path(@recipe)
   end
-
 end
