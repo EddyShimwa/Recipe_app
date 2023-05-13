@@ -1,0 +1,23 @@
+<div class="splash-page bg-gradient-to-r from-blue-600 to-green-500 flex flex-col items-center justify-center h-screen animate-fade-in">
+  <h1 class="text-white font-bold text-4xl mb-4">KitchenGenie</h1>
+  <h2 class="text-white text-center max-w-md mb-8">Your Personal Recipe Assistant: KitchenGenie is the perfect app for anyone who loves cooking. Whether you're an experienced chef or a beginner, KitchenGenie makes it easy to find and save recipes, plan your meals, and create shopping lists.</h2>
+  <div class="flex justify-center">
+    <%= link_to "Log in", new_user_session_path, class: "bg-white text-gray-700 font-bold py-2 px-4 rounded-full mr-4 hover:bg-gray-200" %>
+    <%= link_to "Sign up", new_user_registration_path, class: "bg-yellow-500 text-white font-bold py-2 px-4 rounded-full hover:bg-yellow-600" %>
+  </div>
+</div>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-in-out;
+  }
+</style>
+

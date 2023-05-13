@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root "foods#index"
+  root to: "splash#index"
 
   resources :recipe_foods
   resources :recipes do

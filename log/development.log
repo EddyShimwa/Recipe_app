@@ -11115,3 +11115,1485 @@ Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 14:05:39
   
 ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
   
+Started GET "/" for 127.0.0.1 at 2023-05-13 18:57:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 536)
+  Rendered layout layouts/application.html.erb (Duration: 527.7ms | Allocations: 44258)
+Completed 200 OK in 554ms (Views: 535.7ms | ActiveRecord: 0.0ms | Allocations: 48398)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/engine.rb:530:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 18:58:01 +0200
+
+NameError: constant WebConsole::SourceLocation not defined
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/activesupport-7.0.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/railties-7.0.4.3/lib/rails/engine.rb:530:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/eddy/.rvm/gems/ruby-3.2.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:14:02 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2674)
+Completed 200 OK in 16ms (Views: 12.9ms | Allocations: 3446)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:14:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:14:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 819)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 63.0ms | Allocations: 4623)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 6828)
+Completed 200 OK in 129ms (Views: 73.2ms | ActiveRecord: 17.7ms | Allocations: 19240)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:14:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:14:58 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 233)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 205)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2600)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4421)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 5612)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:14:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:18:17 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 270)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2709)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3479)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:18:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:19:32 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 275)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2717)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 3486)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:19:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:20:18 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2706)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3475)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:20:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:20:30 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2712)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 3484)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:20:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:20:38 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2712)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 3481)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:20:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:20:45 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2702)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:20:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:22:06 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2694)
+Completed 200 OK in 19ms (Views: 17.5ms | Allocations: 3463)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:22:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:23:05 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2706)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3475)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:23:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:23:15 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2710)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 3479)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:23:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:32:08 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2732)
+Completed 200 OK in 19ms (Views: 18.5ms | Allocations: 3503)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:32:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:32:40 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2718)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 3487)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:32:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:33:01 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2730)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3499)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:33:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:34:23 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 302)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2741)
+Completed 200 OK in 11ms (Views: 9.3ms | Allocations: 3510)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:34:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:34:45 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2729)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 3498)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:34:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:35:03 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2730)
+Completed 200 OK in 15ms (Views: 14.5ms | Allocations: 3499)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:35:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:35:47 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2706)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 3475)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:35:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:35:54 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2718)
+Completed 200 OK in 17ms (Views: 16.0ms | Allocations: 3490)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:35:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:36:03 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2721)
+Completed 200 OK in 16ms (Views: 14.9ms | Allocations: 3490)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:36:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2023-05-13 19:37:03 +0200
+Processing by SplashController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splash/index.html.erb within layouts/application
+  Rendered splash/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2078)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 2345)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:37:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:40:44 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1408)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1497)
+Completed 500 Internal Server Error in 8ms (Allocations: 2729)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="w-full max-w-sm mx-auto mt-8">
+  <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="mb-4">
+      <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+      <% if @minimum_password_length %>
+        <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="flex items-center justify-between">
+      <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline %>
+):
+1:    <div class="w-full max-w-sm mx-auto mt-8">
+2:      <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+3:      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+4:        <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:        <div class="mb-4">
+7:          <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+8:          <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+9:        </div>
+10:        <div class="mb-4">
+11:          <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+12:          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+13:        </div>
+14:        <div class="mb-4">
+15:          <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+16:          <% if @minimum_password_length %>
+17:            <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+18:          <% end %>
+19:          <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+20:        </div>
+21:        <div class="mb-4">
+22:          <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+23:          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+24:        </div>
+25:        <div class="flex items-center justify-between">
+26:          <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline %>
+  
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/devise/registrations/new.html.erb:28: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:40:56 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1388)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1477)
+Completed 500 Internal Server Error in 8ms (Allocations: 2687)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="w-full max-w-sm mx-auto mt-8">
+  <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="mb-4">
+      <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+      <% if @minimum_password_length %>
+        <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="flex items-center justify-between">
+      <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+):
+1:    <div class="w-full max-w-sm mx-auto mt-8">
+2:      <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+3:      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+4:        <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:        <div class="mb-4">
+7:          <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+8:          <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+9:        </div>
+10:        <div class="mb-4">
+11:          <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+12:          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+13:        </div>
+14:        <div class="mb-4">
+15:          <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+16:          <% if @minimum_password_length %>
+17:            <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+18:          <% end %>
+19:          <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+20:        </div>
+21:        <div class="mb-4">
+22:          <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+23:          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+24:        </div>
+25:        <div class="flex items-center justify-between">
+26:          <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+  
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:41:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1464)
+Completed 500 Internal Server Error in 5ms (Allocations: 2074)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="w-full max-w-sm mx-auto mt-8">
+  <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="mb-4">
+      <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+      <% if @minimum_password_length %>
+        <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+    <div class="flex items-center justify-between">
+      <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+):
+1:    <div class="w-full max-w-sm mx-auto mt-8">
+2:      <h2 class="text-2xl font-bold mb-4">Sign up</h2>
+3:      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "w-full max-w-sm" }) do |f| %>
+4:        <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:        <div class="mb-4">
+7:          <%= f.label :name, class: "block text-gray-700 font-bold mb-2" %>
+8:          <%= f.text_field :name, autofocus: true, autocomplete: "text", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+9:        </div>
+10:        <div class="mb-4">
+11:          <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+12:          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+13:        </div>
+14:        <div class="mb-4">
+15:          <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+16:          <% if @minimum_password_length %>
+17:            <em class="text-sm text-gray-600">(<%= @minimum_password_length %> characters minimum)</em>
+18:          <% end %>
+19:          <%= f.password_field :password, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+20:        </div>
+21:        <div class="mb-4">
+22:          <%= f.label :password_confirmation, class: "block text-gray-700 font-bold mb-2" %>
+23:          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+24:        </div>
+25:        <div class="flex items-center justify-between">
+26:          <%= f.submit "Sign up", class: "bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+  
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+app/views/devise/registrations/new.html.erb:28: syntax error, unexpected end-of-input
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:43:21 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2832)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5032)
+Completed 200 OK in 21ms (Views: 18.9ms | Allocations: 6263)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:43:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:44:51 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 6.2ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2844)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5044)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 6269)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:44:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:46:55 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 2843)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 5043)
+Completed 200 OK in 31ms (Views: 28.0ms | Allocations: 6259)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:46:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:46:59 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3316)
+Completed 200 OK in 12ms (Views: 10.3ms | Allocations: 3945)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:47:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:47:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2842)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5042)
+Completed 200 OK in 29ms (Views: 25.2ms | Allocations: 6265)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:47:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:48:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.5ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 5053)
+Completed 200 OK in 51ms (Views: 48.7ms | Allocations: 6263)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:48:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:48:18 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3316)
+Completed 200 OK in 23ms (Views: 21.4ms | Allocations: 3941)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:48:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:48:19 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3316)
+Completed 200 OK in 12ms (Views: 10.0ms | Allocations: 3941)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:48:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:49:04 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5053)
+Completed 200 OK in 18ms (Views: 16.2ms | Allocations: 6277)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:49:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:49:07 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3316)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 3945)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:49:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:49:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1680)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3496)
+Completed 200 OK in 15ms (Views: 13.7ms | Allocations: 4493)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:49:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:50:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 625)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2261)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4461)
+Completed 200 OK in 19ms (Views: 17.1ms | Allocations: 5714)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:50:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:51:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 144)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2367)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4183)
+Completed 200 OK in 21ms (Views: 17.4ms | Allocations: 5127)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:51:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:51:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 187)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1350)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3076)
+Completed 200 OK in 14ms (Views: 12.2ms | Allocations: 3739)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:51:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:52:23 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 10.4ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 32.7ms | Allocations: 2852)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 5052)
+Completed 200 OK in 53ms (Views: 51.1ms | Allocations: 6283)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:52:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:52:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1782)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3598)
+Completed 200 OK in 15ms (Views: 11.3ms | Allocations: 4597)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:52:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-05-13 19:52:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1350)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3076)
+Completed 200 OK in 14ms (Views: 12.0ms | Allocations: 3741)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:52:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:52:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3316)
+Completed 200 OK in 10ms (Views: 7.5ms | Allocations: 3919)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:52:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:53:22 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5053)
+Completed 200 OK in 27ms (Views: 25.2ms | Allocations: 6256)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:53:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:53:25 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3316)
+Completed 200 OK in 14ms (Views: 12.9ms | Allocations: 3918)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:53:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:53:32 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2852)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5052)
+Completed 200 OK in 17ms (Views: 15.4ms | Allocations: 6261)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:53:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:53:41 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5053)
+Completed 200 OK in 25ms (Views: 24.1ms | Allocations: 6281)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:53:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:53:55 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 5053)
+Completed 200 OK in 33ms (Views: 30.4ms | Allocations: 6257)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:53:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-05-13 19:54:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5053)
+Completed 200 OK in 27ms (Views: 25.6ms | Allocations: 6278)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:54:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-05-13 19:54:50 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f5164549ec8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.8ms | Allocations: 969)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3711)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5437)
+Completed 422 Unprocessable Entity in 120ms (Views: 13.4ms | ActiveRecord: 40.0ms | Allocations: 10954)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:54:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-05-13 19:54:56 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f515c6b78a8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 840)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3567)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5293)
+Completed 422 Unprocessable Entity in 20ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7190)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:54:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-05-13 19:55:08 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f515c3c3200>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.5ms | Allocations: 1052)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4834)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 7034)
+Completed 422 Unprocessable Entity in 41ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 9782)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/tailwindcss/utilities"):
+  
+Started GET "/stylesheets/application.scss" for 127.0.0.1 at 2023-05-13 19:55:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.scss"):
+  
