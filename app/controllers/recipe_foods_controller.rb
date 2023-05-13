@@ -44,13 +44,10 @@ class RecipeFoodsController < ApplicationController
       end
     end
   end
-  
-  
 
   # DELETE /recipe_foods/1 or /recipe_foods/1.json
   def destroy
     @recipe_food.destroy
-
     redirect_to recipe_url(params[:recipe_id]), notice: 'Ingredient was successfully destroyed.'
   end
 
