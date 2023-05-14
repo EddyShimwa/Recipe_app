@@ -1,7 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-  before_action :authenticate_user!, unless: -> { controller_name == 'splash' && action_name == 'index' }
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource)
+    foods_path
+  end
+
+  def after_sign_out_path_for(resource_or_scope)
+    splash_index_path
+  end
+
+
+
   protected
 
   def configure_permitted_parameters

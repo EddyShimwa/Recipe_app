@@ -1,36 +1,32 @@
-<section class="food-section">
-    <%= link_to 'Add Food', new_food_path, class: 'btn-primary' %>
-    <table class="table">
+<section class="bg-gray-100 py-8">
+  <div class="container mx-auto px-4 flex justify-center items-center">
+    <%= link_to 'Add Food', new_food_path, class: 'bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="table-auto border border-gray-500">
         <thead>
-            <tr>
-                <th>Food</th>
-                <th>Measurement Unit</th>
-                <th>Quantity</th>
-                <th>Unit Price</th>
-                <th>Actions</th>
-            </tr>
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2">Food</th>
+            <th class="px-4 py-2">Measurement Unit</th>
+            <th class="px-4 py-2">Quantity</th>
+            <th class="px-4 py-2">Unit Price</th>
+            <th class="px-4 py-2">Actions</th>
+          </tr>
         </thead>
         <tbody>
-            <% @foods.each do |food|%>
-              <tr>
-                <td>
-                    <%= food.name %>
-                </td>
-                <td>
-                    <%= food.measurement_unit %>
-                </td>
-                <td>
-                    <%= food.quantity %>
-                </td>
-                <td>
-                    <%= food.price %>
-                </td>
-                <td>
-                    <%= button_to 'Delete', food_path(food), method: :delete, data: { confirm: 'Are you sure want to delete this food?' }, class: 'btn-danger' %>
-                </td>
-              </tr>
-            <% end %>
+          <% @foods.each do |food|%>
+            <tr>
+              <td class="border px-4 py-2"><%= food.name %></td>
+              <td class="border px-4 py-2"><%= food.measurement_unit %></td>
+              <td class="border px-4 py-2"><%= food.quantity %></td>
+              <td class="border px-4 py-2"><%= food.price %></td>
+              <td class="border px-4 py-2">
+                <%= button_to 'Delete', food_path(food), method: :delete, data: { confirm: 'Are you sure want to delete this food?' }, class: 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
+              </td>
+            </tr>
+          <% end %>
         </tbody>
-    </table>
+      </table>
+    </div>
+  </div>
 </section>
-
