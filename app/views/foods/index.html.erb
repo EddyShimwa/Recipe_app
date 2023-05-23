@@ -1,9 +1,8 @@
 <section class="bg-gray-100 py-8">
-  <div class="container mx-auto px-4 flex justify-center items-center">
-    <%= link_to 'Add Food', new_food_path, class: 'bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
-
+  <div class="container mx-auto px-4 justify-center items-center">
+    
     <div class="mt-8 overflow-x-auto">
-      <table class="table-auto border border-gray-500">
+      <table class="table-auto border dark-yellow-400">
         <thead>
           <tr class="bg-gray-200">
             <th class="px-4 py-2">Food</th>
@@ -28,5 +27,6 @@
         </tbody>
       </table>
     </div>
+    <%= link_to 'Add Food', new_food_path, class: 'bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
   </div>
 </section>
