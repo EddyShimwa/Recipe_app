@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
-    @user = User.find(params[:id])
+    # No need to find the user again since it's already set in `set_user` method
   end
 
   # GET /users/new
@@ -17,7 +17,9 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1/edit
-  def edit; end
+  def edit
+    # No need to find the user again since it's already set in `set_user` method
+  end
 
   # POST /users or /users.json
   def create
@@ -59,11 +61,14 @@ class UsersController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
+  # # Use callbacks to share common setup or constraints between actions.
   def set_user
-    @user = User.find(params[:id])
+    if params[:id] == 'sign_out'
+      redirect_to root_path notice: 'Logged out successfully!'
+    else
+      @user = User.find(params[:id])
+    end
   end
-
   # Only allow a list of trusted parameters through.
   def user_params
     params.require(:user).permit(:name)

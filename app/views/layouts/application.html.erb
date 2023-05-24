@@ -13,16 +13,15 @@
 
     <%= javascript_importmap_tags %>
   </head>
-  <%= render partial: 'devise/shared/nav' %>
-  <body class="body">
-      <div class="main">
+  <body>
+
         <div class="notification"> 
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
         </div>
 
          <%= yield %>
-      </div>
+
   </body>
 </html>
 
