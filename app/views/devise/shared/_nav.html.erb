@@ -1,0 +1,43 @@
+<nav class="usersCards">
+  <ul class="flex items-center">
+    <% if current_user %>
+      <li class="relative ml-auto pr-4">
+        <div class="flex items-center border-black text-blue-400 p-4" id="profileDropdown">
+          <%= image_tag "profile.png", class: "w-8 h-8 rounded-full cursor-pointer", alt: "Profile Picture" %>
+          <%= image_tag "down-arrow.png", class: "w-4 h-4 rounded-full cursor-pointer ml-4", alt: "Down Arrow" %>
+        </div>
+        <ul class="absolute right-0 mt-2 w-40 mr-4 bg-white border rounded shadow-lg hidden" id="dropdownMenu" >
+          <li class="text-gray-600 block px-4 py-2">
+             Signed in as <em class="text-blue-500"><%= current_user.email %></em>
+          </li>
+
+          <li>
+            <%= link_to "Edit Account", edit_user_registration_path, class: "block px-4 py-2 text-gray-800 hover:bg-gray-200" %>
+          </li>
+          <li>
+            <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "block px-4 py-2 text-red-600 hover:bg-gray-200" %>
+          </li>
+         
+        </ul>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to "Sign Up", new_user_registration_path, class: "text-blue-500 hover:text-blue-700" %>
+      </li>
+      <li class="ml-4">
+        <%= link_to "Sign In", new_user_session_path, class: "text-blue-500 hover:text-blue-700" %>
+      </li>
+    <% end %>
+  </ul>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var profileDropdown = document.getElementById("profileDropdown");
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    
+    profileDropdown.addEventListener("click", function() {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  });
+</script>

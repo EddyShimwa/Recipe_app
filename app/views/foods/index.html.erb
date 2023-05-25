@@ -1,0 +1,33 @@
+  <%= render partial: 'devise/shared/nav' %>
+<section class="main bg-gradient-to-r from-blue-600 to-green-500 h-screen">
+  <div class="container px-4 justify-center items-center mx-auto">
+    
+    <div class="mt-8 overflow-x-auto py-4">
+      <table class="table-auto border dark-yellow-400 mx-auto w-3/5 ">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2">Food</th>
+            <th class="px-4 py-2">Measurement Unit</th>
+            <th class="px-4 py-2">Quantity</th>
+            <th class="px-4 py-2">Unit Price</th>
+            <th class="px-4 py-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @foods.each do |food|%>
+            <tr>
+              <td class="border px-4 py-2"><%= food.name %></td>
+              <td class="border px-4 py-2"><%= food.measurement_unit %></td>
+              <td class="border px-4 py-2"><%= food.quantity %></td>
+              <td class="border px-4 py-2"><%= food.price %></td>
+              <td class="border px-4 py-2">
+                <%= button_to 'Delete', food_path(food), method: :delete, data: { confirm: 'Are you sure want to delete this food?' }, class: 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <%= link_to 'Add Food', new_food_path, class: 'flex w-1/6 bg-yellow-500 hover:bg-yellow-700 text-white justify-center font-bold py-2 px-4 mx-auto rounded focus:outline-none focus:shadow-outline' %>
+  </div>
+</section>
