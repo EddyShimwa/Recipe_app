@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-   <!-- CSS only -->
 <link href="https://cdn.tailwindcss.com" rel="stylesheet">
  <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,15 +12,17 @@
 
     <%= javascript_importmap_tags %>
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-blue-600 to-green-500 h-screen">
 
         <div class="notification"> 
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
         </div>
-
          <%= yield %>
 
+         <footer>
+            <h1>This is for the footer<h1>
+          </footer>
   </body>
 </html>
 

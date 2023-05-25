@@ -2,13 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 body {
     height: 100vh;
     align-items: center;
-    background-image: url('pozo.jpg');
+ 
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .main {
@@ -18,3 +18,4 @@ body {
     width: 100%;
     margin: auto;
 }
+
